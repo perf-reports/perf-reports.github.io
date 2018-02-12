@@ -1,0 +1,24 @@
+# Site settings
+title: Vitamix.com Performance Reports
+description: Performance reports for specific pages on Vitamix.com
+
+# Server
+host: 0.0.0.0
+port: 4000
+
+# URLs
+permalink: pretty
+
+# Autoprefixer settings
+autoprefixer:
+  browsers:
+    - last two versions
+
+# Build settings
+markdown: kramdown
+
+sass:
+  sass_dir: scss
+  style: expanded  # nested|expanded|compact|compressed
+
+exclude: ["node_modules", "README", "README.md", bower.json", ".travis.yml", ".gitignore", ".gitattributes", ".gitmodules", "LICENSE", "CHANGELOG.md", "Gemfile", "Gemfile.lock"]
