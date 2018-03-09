@@ -18,7 +18,7 @@ lighthouse --config-path=./vitamix-config.json https://www.vitamix.com --quiet -
 
 
 # these are the pages to be tested, using their url path minus the root domain (country and language codes also excluded)
-PATHS="why-vitamix what-you-can-make find-recipes be-inspired support shop shop/blenders shop/ascent-series shop/legacy-series shop/personal-series shop/recommender /page-not-found"
+PATHS="why-vitamix what-you-can-make find-recipes be-inspired support shop shop/blenders shop/smart-system-blenders shop/classic-blenders shop/space-saving-blenders shop/recommender /page-not-found"
 
 # announces which page is being tested, creates a report with the page title for the file name and puts it in this month's directory
 for path in $PATHS; do
