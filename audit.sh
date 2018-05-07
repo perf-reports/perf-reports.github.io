@@ -13,8 +13,8 @@ lighthouse --config-path=./vitamix-config.json https://www.vitamix.com --quiet -
 
 # the optimized product detail page format requires testing it on preview server since it isn't always in use on the site. the e310 product could be swapped out with any product, in reality.
 # big drawback to being able to automate this is the need to use OpenVPN to hit the page. for now, this page is tested maually
-#echo "Testing optimized pdp"
-#lighthouse --config-path=./vitamix-config.json https://vmx-preview.sparkred.com/shop/e310 --quiet --chrome-flags="--headless" --output html --output-path="$NOW/e310.html"
+echo "Testing optimized pdp"
+lighthouse --config-path=./vitamix-config.json https://www.vitamix.com/ca/en_us/shop/e310 --quiet --chrome-flags="--headless" --output html --output-path="$NOW/e310.html"
 
 
 # these are the pages to be tested, using their url path minus the root domain (country and language codes also excluded)
